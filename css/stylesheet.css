@@ -446,15 +446,97 @@ article a {
     left: 40px;
 }
 
-form {}
+form {
+    margin-top: 40px;
+}
 
 .section_contact img {
     margin-top: 30px;
 }
 
 
+input[type="email"],
+input[type="tel"],
+input[type="text"] {
+    background: #E5E5E5;
+    width: 335px;
+    height: 44px;
+    border: none;
+    border-radius: 9px;
+    margin-bottom: 10px;
+    color: #3D4959;
+    font-size: 18px;
+}
 
+input[type="email"],
+input[type="tel"],
+input[type="text"]::placeholder {
+    color: #6A7788;
+    padding-left: 14px;
+    font-family: "Roboto";
+    font-size: 12px;
 
+}
+
+textarea {
+    border: none;
+    background: #E5E5E5;
+    width: 335px;
+    height: 100px;
+    border-radius: 9px;
+    margin-bottom: 20px;
+    color: #3D4959;
+    padding-left: 10px;
+}
+
+input[type="submit"] {
+    background: #6E59D3;
+    border: none;
+    width: 174px;
+    height: 44px;
+    border: none;
+    border-radius: 9px;
+    color: #FFF;
+    font-size: 12px;
+}
+
+/*FOOTER*/
+footer {
+    background: #6E59D3;
+    height: 425px;
+}
+
+.conteneur_footer {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+footer h1,
+footer h3,
+footer p {
+    color: #FFF;
+}
+
+footer p {
+    margin-bottom: 20px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.titre_secondaire_footer {
+    margin-bottom: 40px;
+    text-align: start;
+}
+
+.rs_footer {
+    margin-top: 40px;
+    display: flex;
+    width: 130px;
+    align-items: center;
+    justify-content: space-between;
+}
 
 /*image/fond*/
 .fondimage {
