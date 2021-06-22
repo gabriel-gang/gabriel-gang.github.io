@@ -25,7 +25,7 @@
   width: 30px;
 }
 
-.barmenu:focus + nav {
+.iconmenu:focus + nav {
   bottom: 0px;
 }
 
@@ -34,7 +34,7 @@
   height: 189px;
   width: 375px;
   position: fixed;
-  bottom: -100vh;
+  bottom:0;
   left: 0px;
   z-index: 101;
   font-size: 12px;
@@ -47,12 +47,14 @@
 .menu a {
   color: #3b3b40;
   text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
 }
-
+.menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
 .menu li {
   list-style: none;
 }
@@ -249,73 +251,16 @@ h4 {
   position: relative;
 }
 
-.ui {
-  margin-top: 40px;
+.competence1,.competence2,.competence3{
+    display: flex;
+    align-items: center;
 }
-
-.competence1 {
-  position: absolute;
-  left: 50px;
-  top: 125px;
+.competence1 img:first-of-type,.competence2 img:first-of-type,.competence3 img:first-of-type{
+ margin-right: 10px;   
 }
-
-conteneur_competence p {
-  margin-top: 10px;
+.competence1 img:last-of-type,.competence2 img:last-of-type,.competence3 img:last-of-type{
+    margin-left: auto;
 }
-
-.flechecompetence1 {
-  position: absolute;
-  right: 0px;
-  top: 135px;
-}
-
-.text_bar {
-  margin-right: auto;
-  height: 0px;
-  overflow: hidden;
-}
-#competence1:checked + .text_bar {
-  height: 100px;
-}
-.integrationimg {
-  margin-top: 280px;
-}
-
-.competence2 {
-  position: absolute;
-  left: 50px;
-  top: 450px;
-}
-
-.flechecompetence2 {
-  position: absolute;
-  right: 0px;
-  top: 460px;
-}
-
-.text_bar2 {
-  display: none;
-  position: absolute;
-  right: 0px;
-  top: 520px;
-}
-
-.mark {
-  margin-top: 50px;
-}
-
-.competence3 {
-  position: absolute;
-  left: 50px;
-  top: 540px;
-}
-
-.flechecompetence3 {
-  position: absolute;
-  right: 0px;
-  top: 550px;
-}
-
 /* SERVICE */
 .section_service {
   width: 90vw;
